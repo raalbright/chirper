@@ -8,6 +8,6 @@ export const makeChirp = () => ( {
     name: chance.name(),
   },
   body: chance.sentence(),
-  createdAt: chance.date(),
+  createdAt: chance.date( { year: 2018 } ),
   id: chance.guid()
 } );
