@@ -3,11 +3,10 @@ import Chirp from "./Chirp"
 
 const Timeline = ( { chirps } ) => (
   <Fragment>
-    <h1>Timeline</h1>
     <div className="d-flex justify-content-center">
       <div className="list-group list-group-flush w-50">
         { chirps.map( chirp => (
-          <Chirp chirp={ chirp } />
+          <Chirp chirp={ chirp } key={ chirp.id } />
         ) ) }
       </div>
     </div>

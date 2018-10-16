@@ -1,7 +1,7 @@
 import React from "react";
 
 const Chirp = ( { chirp } ) => (
-  <div className="list-group-item" key={ chirp.id }>
+  <div className="list-group-item" >
     <div className="media">
       <div className="media-body">
         <h5 className="mt-0 small text-muted">
